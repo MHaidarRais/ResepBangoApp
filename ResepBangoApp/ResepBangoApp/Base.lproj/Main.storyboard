@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Login" customModule="ResepBangoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wfh-gH-vnB">
+                                <rect key="frame" x="16" y="193" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-QB-3ox">
+                                <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-Bj-Xgk">
+                                <rect key="frame" x="168" y="334" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cW5-0J-Kwl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-Ft-fWK">
+                                <rect key="frame" x="124" y="372" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Belom punya akun"/>
+                                <connections>
+                                    <segue destination="1Bp-O0-tk7" kind="modal" id="KY4-lh-lsd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="etPassword" destination="MTr-QB-3ox" id="3ix-Ho-xwM"/>
+                        <outlet property="etUsername" destination="Wfh-gH-vnB" id="EpB-lO-Wsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="jVn-VZ-K97">
+            <objects>
+                <viewController id="1Bp-O0-tk7" customClass="Register" customModule="ResepBangoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Rn-FW-zxH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dK2-Zb-KAK">
+                                <rect key="frame" x="16" y="150" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BeR-gd-iS5">
+                                <rect key="frame" x="16" y="226" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alamat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-lI-JJm">
+                                <rect key="frame" x="16" y="264" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NoTelp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIG-27-aFH">
+                                <rect key="frame" x="16" y="302" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V87-gc-ous">
+                                <rect key="frame" x="16" y="188" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nio-JT-ZqZ">
+                                <rect key="frame" x="159" y="338" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="btnRegister:" destination="1Bp-O0-tk7" eventType="touchUpInside" id="YvD-Kr-aO5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8P-Zt-3FO">
+                                <rect key="frame" x="128" y="376" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Udah punya akun"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="2ik-6w-hgA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="r2Y-gg-XxH"/>
+                    </view>
+                    <connections>
+                        <outlet property="etAlamat" destination="Hq5-lI-JJm" id="Qvr-Dk-q2q"/>
+                        <outlet property="etEmail" destination="BeR-gd-iS5" id="4L7-ME-c8m"/>
+                        <outlet property="etNotelp" destination="UIG-27-aFH" id="NvD-vN-KGt"/>
+                        <outlet property="etPassword" destination="V87-gc-ous" id="Tv5-nI-3gI"/>
+                        <outlet property="etUsername" destination="dK2-Zb-KAK" id="Pys-9F-Wwi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAT-FS-8RS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="118"/>
+        </scene>
+        <!--Resep Table View Controller-->
+        <scene sceneID="f4V-Mg-nuZ">
+            <objects>
+                <tableViewController storyboardIdentifier="resep" id="jND-la-J4B" customClass="ResepTableViewController" customModule="ResepBangoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qgf-hq-57f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Nag-ne-Q2j">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Title" id="lK9-Zs-RoH">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="ltU-23-I3x">
+                                        <connections>
+                                            <segue destination="tij-CZ-Pti" kind="modal" id="f5h-09-6gh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="m50-UB-bM3" customClass="resepTableViewCell" customModule="ResepBangoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="133"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m50-UB-bM3" id="rGl-zz-9MG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="132.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama resep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wto-Vb-0b2">
+                                            <rect key="frame" x="8" y="8" width="177" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="177" id="NHj-vs-kf3"/>
+                                                <constraint firstAttribute="height" constant="41" id="Vux-Eb-3hI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="porsi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kJ-CH-2Ee">
+                                            <rect key="frame" x="8" y="46" width="38" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="MXI-gm-UeB"/>
+                                                <constraint firstAttribute="width" constant="38" id="rSZ-2q-b7X"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-Wj-Nxk">
+                                            <rect key="frame" x="8" y="75" width="37" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="37" id="OTp-0o-lh5"/>
+                                                <constraint firstAttribute="height" constant="21" id="ocX-Gy-Bac"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4kJ-CH-2Ee" firstAttribute="leading" secondItem="rGl-zz-9MG" secondAttribute="leadingMargin" id="Ciu-RL-8o4"/>
+                                        <constraint firstItem="Wto-Vb-0b2" firstAttribute="leading" secondItem="rGl-zz-9MG" secondAttribute="leadingMargin" id="DFU-n9-juK"/>
+                                        <constraint firstItem="4kJ-CH-2Ee" firstAttribute="top" secondItem="rGl-zz-9MG" secondAttribute="topMargin" constant="38" id="Dt3-sr-kly"/>
+                                        <constraint firstItem="rFd-Wj-Nxk" firstAttribute="top" secondItem="4kJ-CH-2Ee" secondAttribute="bottom" constant="8" id="FAO-v3-b6R"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Wto-Vb-0b2" secondAttribute="trailing" constant="182" id="Gqu-h6-zb1"/>
+                                        <constraint firstItem="rFd-Wj-Nxk" firstAttribute="top" secondItem="4kJ-CH-2Ee" secondAttribute="bottom" constant="8" id="In7-ep-YjN"/>
+                                        <constraint firstItem="rFd-Wj-Nxk" firstAttribute="leading" secondItem="rGl-zz-9MG" secondAttribute="leadingMargin" id="KTG-fs-TGQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4kJ-CH-2Ee" secondAttribute="trailing" constant="321" id="ZeZ-ts-4oz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="rFd-Wj-Nxk" secondAttribute="trailing" constant="322" id="cZ5-cp-G5G"/>
+                                        <constraint firstItem="rFd-Wj-Nxk" firstAttribute="top" secondItem="Wto-Vb-0b2" secondAttribute="bottom" constant="26" id="r2Q-U0-eMI"/>
+                                        <constraint firstItem="Wto-Vb-0b2" firstAttribute="top" secondItem="rGl-zz-9MG" secondAttribute="topMargin" id="ww4-h0-ItD"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="rFd-Wj-Nxk" secondAttribute="bottom" constant="28.5" id="xfj-bh-8ms"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labellama" destination="rFd-Wj-Nxk" id="MBc-UK-e5H"/>
+                                    <outlet property="labelporsi" destination="4kJ-CH-2Ee" id="RNF-e8-ijS"/>
+                                    <outlet property="labelresep" destination="Wto-Vb-0b2" id="sj0-eq-9yy"/>
+                                    <segue destination="NhH-J2-FVM" kind="show" id="Xx1-M1-dcs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jND-la-J4B" id="cNY-Hr-DJ6"/>
+                            <outlet property="delegate" destination="jND-la-J4B" id="0yA-zT-5sR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cg7-mS-Z62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.8" y="117.39130434782609"/>
+        </scene>
+        <!--Tambah View Controller-->
+        <scene sceneID="I9G-a6-hxC">
+            <objects>
+                <viewController id="tij-CZ-Pti" customClass="tambahViewController" customModule="ResepBangoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BH8-dg-udU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVy-Kj-h2b">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="RgD-HF-xRd">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="NU2-8m-Z8O">
+                                            <connections>
+                                                <segue destination="jND-la-J4B" kind="modal" id="APg-Tw-OQl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nama resep" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4Q-7x-a3j">
+                                <rect key="frame" x="16" y="146" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lama pengerjaan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AT3-6W-zBu">
+                                <rect key="frame" x="16" y="193" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="porsi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jos-av-mpC">
+                                <rect key="frame" x="16" y="238" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="harga" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-Lx-ZvX">
+                                <rect key="frame" x="16" y="285" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bahan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6l-vr-KDn">
+                                <rect key="frame" x="16" y="323" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cara masak" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3a5-RG-eUY">
+                                <rect key="frame" x="16" y="367" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-qy-frP">
+                                <rect key="frame" x="129" y="436" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="tamba"/>
+                                <connections>
+                                    <action selector="btnTambah:" destination="tij-CZ-Pti" eventType="touchUpInside" id="wsF-nO-ctc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5Ng-nd-lXN"/>
+                    </view>
+                    <connections>
+                        <outlet property="etResep" destination="a4Q-7x-a3j" id="Yyk-qH-G2C"/>
+                        <outlet property="etbahan" destination="V6l-vr-KDn" id="XyV-70-0hu"/>
+                        <outlet property="etcara" destination="3a5-RG-eUY" id="KwQ-rN-bDu"/>
+                        <outlet property="etharga" destination="hPf-Lx-ZvX" id="9GO-Sp-hZh"/>
+                        <outlet property="etlama" destination="AT3-6W-zBu" id="6nS-Bo-KRR"/>
+                        <outlet property="etporsi" destination="Jos-av-mpC" id="Y2o-Uo-Ssf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obJ-NI-dNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384.8000000000002" y="-466.41679160419795"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="pd7-Jt-2IX">
+            <objects>
+                <viewController id="NhH-J2-FVM" customClass="DetailViewController" customModule="ResepBangoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lkr-a5-Ci4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-0n-hRx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="qzA-Er-c7T">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Eg6-Lh-L2D">
+                                            <connections>
+                                                <segue destination="jND-la-J4B" kind="modal" id="XLx-9A-F0H"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4d-Ug-47C">
+                                <rect key="frame" x="149" y="84" width="76" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Haw-rg-wzv">
+                                <rect key="frame" x="125" y="129" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="porsi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZx-af-u18">
+                                <rect key="frame" x="188" y="128" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bahan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjU-m1-oN1">
+                                <rect key="frame" x="16" y="157" width="320" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cara masak" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJJ-0a-JYB">
+                                <rect key="frame" x="16" y="412" width="320" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="IcB-55-nKh"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelbahan" destination="kjU-m1-oN1" id="z1h-b1-Cp2"/>
+                        <outlet property="labelcara" destination="PJJ-0a-JYB" id="Zrr-Jv-N9l"/>
+                        <outlet property="labellama" destination="Haw-rg-wzv" id="86w-fO-tiL"/>
+                        <outlet property="labelporsi" destination="UZx-af-u18" id="aqX-pK-4vV"/>
+                        <outlet property="labelresep" destination="l4d-Ug-47C" id="TEo-V5-gcL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVy-t4-kv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384.8000000000002" y="249.62518740629687"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f5h-09-6gh"/>
+        <segue reference="APg-Tw-OQl"/>
+    </inferredMetricsTieBreakers>
+</document>

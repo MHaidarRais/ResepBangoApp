@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30BF24359E0495DA7AD828F3 /* Pods_ResepBangoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2412E45922D22416E3A743F3 /* Pods_ResepBangoApp.framework */; };
+		8AD4732D1FBEDD93007E977D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4732C1FBEDD93007E977D /* AppDelegate.swift */; };
+		8AD4732F1FBEDD93007E977D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4732E1FBEDD93007E977D /* ViewController.swift */; };
+		8AD473321FBEDD93007E977D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD473301FBEDD93007E977D /* Main.storyboard */; };
+		8AD473351FBEDD93007E977D /* ResepBangoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AD473331FBEDD93007E977D /* ResepBangoApp.xcdatamodeld */; };
+		8AD473371FBEDD93007E977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD473361FBEDD93007E977D /* Assets.xcassets */; };
+		8AD4733A1FBEDD93007E977D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD473381FBEDD93007E977D /* LaunchScreen.storyboard */; };
+		8AD473451FBEDD93007E977D /* ResepBangoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD473441FBEDD93007E977D /* ResepBangoAppTests.swift */; };
+		8AD473501FBEDD93007E977D /* ResepBangoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4734F1FBEDD93007E977D /* ResepBangoAppUITests.swift */; };
+		8AD4735E1FBEE40C007E977D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4735D1FBEE40C007E977D /* Login.swift */; };
+		8AD473601FBEE418007E977D /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD4735F1FBEE418007E977D /* Register.swift */; };
+		8AD473621FBEE433007E977D /* ResepTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD473611FBEE433007E977D /* ResepTableViewController.swift */; };
+		8AD473641FBEE441007E977D /* resepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD473631FBEE441007E977D /* resepTableViewCell.swift */; };
+		8AD473661FBEE44E007E977D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD473651FBEE44E007E977D /* DetailViewController.swift */; };
+		8AD473681FBEEF62007E977D /* tambahViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD473671FBEEF62007E977D /* tambahViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AD473411FBEDD93007E977D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD473211FBEDD93007E977D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD473281FBEDD93007E977D;
+			remoteInfo = ResepBangoApp;
+		};
+		8AD4734C1FBEDD93007E977D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD473211FBEDD93007E977D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD473281FBEDD93007E977D;
+			remoteInfo = ResepBangoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07A9AEDD38A4E56503389AD7 /* Pods-ResepBangoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResepBangoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ResepBangoApp/Pods-ResepBangoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2412E45922D22416E3A743F3 /* Pods_ResepBangoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResepBangoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD473291FBEDD93007E977D /* ResepBangoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResepBangoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD4732C1FBEDD93007E977D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AD4732E1FBEDD93007E977D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AD473311FBEDD93007E977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AD473341FBEDD93007E977D /* ResepBangoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResepBangoApp.xcdatamodel; sourceTree = "<group>"; };
+		8AD473361FBEDD93007E977D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AD473391FBEDD93007E977D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AD4733B1FBEDD93007E977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD473401FBEDD93007E977D /* ResepBangoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResepBangoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD473441FBEDD93007E977D /* ResepBangoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepBangoAppTests.swift; sourceTree = "<group>"; };
+		8AD473461FBEDD93007E977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD4734B1FBEDD93007E977D /* ResepBangoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResepBangoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD4734F1FBEDD93007E977D /* ResepBangoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepBangoAppUITests.swift; sourceTree = "<group>"; };
+		8AD473511FBEDD93007E977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AD4735D1FBEE40C007E977D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		8AD4735F1FBEE418007E977D /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		8AD473611FBEE433007E977D /* ResepTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepTableViewController.swift; sourceTree = "<group>"; };
+		8AD473631FBEE441007E977D /* resepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resepTableViewCell.swift; sourceTree = "<group>"; };
+		8AD473651FBEE44E007E977D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8AD473671FBEEF62007E977D /* tambahViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tambahViewController.swift; sourceTree = "<group>"; };
+		EB63861D7358AD1FFC460EC1 /* Pods-ResepBangoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResepBangoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ResepBangoApp/Pods-ResepBangoApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AD473261FBEDD93007E977D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BF24359E0495DA7AD828F3 /* Pods_ResepBangoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD4733D1FBEDD93007E977D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD473481FBEDD93007E977D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D8A5F6E7C1F06DA4B3D25B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2412E45922D22416E3A743F3 /* Pods_ResepBangoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AD473201FBEDD93007E977D = {
+			isa = PBXGroup;
+			children = (
+				8AD4732B1FBEDD93007E977D /* ResepBangoApp */,
+				8AD473431FBEDD93007E977D /* ResepBangoAppTests */,
+				8AD4734E1FBEDD93007E977D /* ResepBangoAppUITests */,
+				8AD4732A1FBEDD93007E977D /* Products */,
+				A6D252EEA50EDFFF1268044B /* Pods */,
+				1D8A5F6E7C1F06DA4B3D25B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AD4732A1FBEDD93007E977D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AD473291FBEDD93007E977D /* ResepBangoApp.app */,
+				8AD473401FBEDD93007E977D /* ResepBangoAppTests.xctest */,
+				8AD4734B1FBEDD93007E977D /* ResepBangoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD4732B1FBEDD93007E977D /* ResepBangoApp */ = {
+			isa = PBXGroup;
+			children = (
+				8AD4732C1FBEDD93007E977D /* AppDelegate.swift */,
+				8AD4732E1FBEDD93007E977D /* ViewController.swift */,
+				8AD473301FBEDD93007E977D /* Main.storyboard */,
+				8AD473361FBEDD93007E977D /* Assets.xcassets */,
+				8AD473381FBEDD93007E977D /* LaunchScreen.storyboard */,
+				8AD4733B1FBEDD93007E977D /* Info.plist */,
+				8AD473331FBEDD93007E977D /* ResepBangoApp.xcdatamodeld */,
+				8AD4735D1FBEE40C007E977D /* Login.swift */,
+				8AD4735F1FBEE418007E977D /* Register.swift */,
+				8AD473611FBEE433007E977D /* ResepTableViewController.swift */,
+				8AD473631FBEE441007E977D /* resepTableViewCell.swift */,
+				8AD473651FBEE44E007E977D /* DetailViewController.swift */,
+				8AD473671FBEEF62007E977D /* tambahViewController.swift */,
+			);
+			path = ResepBangoApp;
+			sourceTree = "<group>";
+		};
+		8AD473431FBEDD93007E977D /* ResepBangoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AD473441FBEDD93007E977D /* ResepBangoAppTests.swift */,
+				8AD473461FBEDD93007E977D /* Info.plist */,
+			);
+			path = ResepBangoAppTests;
+			sourceTree = "<group>";
+		};
+		8AD4734E1FBEDD93007E977D /* ResepBangoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AD4734F1FBEDD93007E977D /* ResepBangoAppUITests.swift */,
+				8AD473511FBEDD93007E977D /* Info.plist */,
+			);
+			path = ResepBangoAppUITests;
+			sourceTree = "<group>";
+		};
+		A6D252EEA50EDFFF1268044B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A9AEDD38A4E56503389AD7 /* Pods-ResepBangoApp.debug.xcconfig */,
+				EB63861D7358AD1FFC460EC1 /* Pods-ResepBangoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AD473281FBEDD93007E977D /* ResepBangoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD473541FBEDD93007E977D /* Build configuration list for PBXNativeTarget "ResepBangoApp" */;
+			buildPhases = (
+				6094B6AADB92856DA46B59CF /* [CP] Check Pods Manifest.lock */,
+				8AD473251FBEDD93007E977D /* Sources */,
+				8AD473261FBEDD93007E977D /* Frameworks */,
+				8AD473271FBEDD93007E977D /* Resources */,
+				D80E11D3569FAF98B1B0D14C /* [CP] Embed Pods Frameworks */,
+				484C2D099AD3ED3F8E13FED4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResepBangoApp;
+			productName = ResepBangoApp;
+			productReference = 8AD473291FBEDD93007E977D /* ResepBangoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AD4733F1FBEDD93007E977D /* ResepBangoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD473571FBEDD93007E977D /* Build configuration list for PBXNativeTarget "ResepBangoAppTests" */;
+			buildPhases = (
+				8AD4733C1FBEDD93007E977D /* Sources */,
+				8AD4733D1FBEDD93007E977D /* Frameworks */,
+				8AD4733E1FBEDD93007E977D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AD473421FBEDD93007E977D /* PBXTargetDependency */,
+			);
+			name = ResepBangoAppTests;
+			productName = ResepBangoAppTests;
+			productReference = 8AD473401FBEDD93007E977D /* ResepBangoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AD4734A1FBEDD93007E977D /* ResepBangoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD4735A1FBEDD93007E977D /* Build configuration list for PBXNativeTarget "ResepBangoAppUITests" */;
+			buildPhases = (
+				8AD473471FBEDD93007E977D /* Sources */,
+				8AD473481FBEDD93007E977D /* Frameworks */,
+				8AD473491FBEDD93007E977D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AD4734D1FBEDD93007E977D /* PBXTargetDependency */,
+			);
+			name = ResepBangoAppUITests;
+			productName = ResepBangoAppUITests;
+			productReference = 8AD4734B1FBEDD93007E977D /* ResepBangoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AD473211FBEDD93007E977D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Haidar Rais";
+				TargetAttributes = {
+					8AD473281FBEDD93007E977D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					8AD4733F1FBEDD93007E977D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8AD473281FBEDD93007E977D;
+					};
+					8AD4734A1FBEDD93007E977D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8AD473281FBEDD93007E977D;
+					};
+				};
+			};
+			buildConfigurationList = 8AD473241FBEDD93007E977D /* Build configuration list for PBXProject "ResepBangoApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AD473201FBEDD93007E977D;
+			productRefGroup = 8AD4732A1FBEDD93007E977D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AD473281FBEDD93007E977D /* ResepBangoApp */,
+				8AD4733F1FBEDD93007E977D /* ResepBangoAppTests */,
+				8AD4734A1FBEDD93007E977D /* ResepBangoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AD473271FBEDD93007E977D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD4733A1FBEDD93007E977D /* LaunchScreen.storyboard in Resources */,
+				8AD473371FBEDD93007E977D /* Assets.xcassets in Resources */,
+				8AD473321FBEDD93007E977D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD4733E1FBEDD93007E977D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD473491FBEDD93007E977D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		484C2D099AD3ED3F8E13FED4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ResepBangoApp/Pods-ResepBangoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6094B6AADB92856DA46B59CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ResepBangoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80E11D3569FAF98B1B0D14C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ResepBangoApp/Pods-ResepBangoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ResepBangoApp/Pods-ResepBangoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AD473251FBEDD93007E977D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD473351FBEDD93007E977D /* ResepBangoApp.xcdatamodeld in Sources */,
+				8AD4732F1FBEDD93007E977D /* ViewController.swift in Sources */,
+				8AD4732D1FBEDD93007E977D /* AppDelegate.swift in Sources */,
+				8AD4735E1FBEE40C007E977D /* Login.swift in Sources */,
+				8AD473641FBEE441007E977D /* resepTableViewCell.swift in Sources */,
+				8AD473681FBEEF62007E977D /* tambahViewController.swift in Sources */,
+				8AD473601FBEE418007E977D /* Register.swift in Sources */,
+				8AD473621FBEE433007E977D /* ResepTableViewController.swift in Sources */,
+				8AD473661FBEE44E007E977D /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD4733C1FBEDD93007E977D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD473451FBEDD93007E977D /* ResepBangoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD473471FBEDD93007E977D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD473501FBEDD93007E977D /* ResepBangoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AD473421FBEDD93007E977D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AD473281FBEDD93007E977D /* ResepBangoApp */;
+			targetProxy = 8AD473411FBEDD93007E977D /* PBXContainerItemProxy */;
+		};
+		8AD4734D1FBEDD93007E977D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AD473281FBEDD93007E977D /* ResepBangoApp */;
+			targetProxy = 8AD4734C1FBEDD93007E977D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AD473301FBEDD93007E977D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD473311FBEDD93007E977D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AD473381FBEDD93007E977D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD473391FBEDD93007E977D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AD473521FBEDD93007E977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AD473531FBEDD93007E977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AD473551FBEDD93007E977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A9AEDD38A4E56503389AD7 /* Pods-ResepBangoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ResepBangoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unique-Dev.ResepBangoApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AD473561FBEDD93007E977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB63861D7358AD1FFC460EC1 /* Pods-ResepBangoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ResepBangoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unique-Dev.ResepBangoApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8AD473581FBEDD93007E977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ResepBangoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unique-Dev.ResepBangoAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResepBangoApp.app/ResepBangoApp";
+			};
+			name = Debug;
+		};
+		8AD473591FBEDD93007E977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ResepBangoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unique-Dev.ResepBangoAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResepBangoApp.app/ResepBangoApp";
+			};
+			name = Release;
+		};
+		8AD4735B1FBEDD93007E977D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ResepBangoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unique-Dev.ResepBangoAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ResepBangoApp;
+			};
+			name = Debug;
+		};
+		8AD4735C1FBEDD93007E977D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ResepBangoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unique-Dev.ResepBangoAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ResepBangoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AD473241FBEDD93007E977D /* Build configuration list for PBXProject "ResepBangoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD473521FBEDD93007E977D /* Debug */,
+				8AD473531FBEDD93007E977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD473541FBEDD93007E977D /* Build configuration list for PBXNativeTarget "ResepBangoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD473551FBEDD93007E977D /* Debug */,
+				8AD473561FBEDD93007E977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD473571FBEDD93007E977D /* Build configuration list for PBXNativeTarget "ResepBangoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD473581FBEDD93007E977D /* Debug */,
+				8AD473591FBEDD93007E977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD4735A1FBEDD93007E977D /* Build configuration list for PBXNativeTarget "ResepBangoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD4735B1FBEDD93007E977D /* Debug */,
+				8AD4735C1FBEDD93007E977D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8AD473331FBEDD93007E977D /* ResepBangoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8AD473341FBEDD93007E977D /* ResepBangoApp.xcdatamodel */,
+			);
+			currentVersion = 8AD473341FBEDD93007E977D /* ResepBangoApp.xcdatamodel */;
+			path = ResepBangoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8AD473211FBEDD93007E977D /* Project object */;
+}
